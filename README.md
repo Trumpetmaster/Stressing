@@ -46,9 +46,34 @@ Alright, save and then run the app!
 
 
 **Run the App** Switch to the command line, and go ahead and run the app like so:
-And this is how you put a box around your text:
 
     # ./my-lesson.js
+    
+    
+ And Huston we have a takeoff!!! we have a person Object ...but ...wait, the person is blank! 
+ You can see when we logged the person Object using console.log(person);, we were given {}, literally a blank,
+ empty Object! Objects store their values by a String key, the key being the name of the property, and we 
+ can use that key to look up the value of property. The literal syntax for creating properties on an Object 
+ looks like this:
+ 
+ ```
+ var myObject = {id: 1, 
+                name: "Some Object"};
+
+console.log(myObject.id)   // prints: 1;
+console.log(myObject.name) // prints: Some Object;
+
+```
+# Now Lets give or homie a name!
+## We are going to spice up this pot of soup...
+
+// TODO 3 : Add firstName and lastName properties to our person:
+person.firstName = "Berry";
+person.lastName = "The Chopper";
+console.log("First Name: " + person.firstName);
+console.log("Last Name: " + person.lastName);
+
+Cool, lets save and run... 
 
 
 &copy; John Fraboni 2014

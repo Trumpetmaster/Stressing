@@ -65,7 +65,7 @@ console.log(myObject.name) // prints: Some Object;
 
 ```
 # Now Lets give or homie a name!
-## We are going to spice up this pot of soup...
+### We are going to spice up this pot of soup...
 
 // TODO 3 : Add firstName and lastName properties to our person:
 person.firstName = "Berry";

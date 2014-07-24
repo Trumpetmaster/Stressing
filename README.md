@@ -64,16 +64,61 @@ console.log(myObject.id)   // prints: 1;
 console.log(myObject.name) // prints: Some Object;
 
 ```
-# Now Lets give or homie a name!
+# Now Lets give our homie a name!
 ### We are going to spice up this pot of soup...
 
-// TODO 3 : Add firstName and lastName properties to our person:
+TODO 2: Add firstName and lastName properties to our person:
+```
 person.firstName = "Berry";
 person.lastName = "The Chopper";
 console.log("First Name: " + person.firstName);
 console.log("Last Name: " + person.lastName);
+```
 
 Cool, lets save and run... 
+Properties : Array Syntax
 
+TODO 3 : So, because the keys of an Object are actually Strings, we can also use the syntax:
+
+```
+myObject["type"] = "Awesome Object"; 
+
+```
+to create properties, sometimes called Array syntax. Go ahead and add a 
+city property to our person:
+
+```
+// TODO 3 : Add the city property using Array syntax:
+
+person["city"] = "Central";
+console.log("City: " + person.city);
+
+```
+ That's what's up!
+ 
+ Behaviours : Functions as Methods
+
+Okay, so we've given our person a bit more of a personality in that we've added some properties to the person
+Object. What about behaviours? Remember we said Objects are made of properties and behaviours. Here we come 
+to functions, or otherwise known as in the object oriented world, methods.
+
+Functions are a group of statements executed one after another within their own sort of subprogram or closed 
+environment - called a closure - think of them like a program wihtin a program. And we can store them in 
+memory by assinging them to a variable or constant so that we can run them again and again. This helps with 
+maintainability, but because they kind of have their own private world when they execute, they are extremely
+powerful. Instead of passing around a value, we can pass around a whole set of instructions that perform all
+kinds of calculations and retrieval of data!
+
+TODO 4 : Object oriented programming tries to model objects in a system like objects in the real world. So,
+a car has wheels and an engine, that is, properties, and methods by which we can start it, steer it, and 
+stop it - hopefully! We know what properties are, methods are merely functions we attach to objects to act as
+methods or behaviours of the object - and here's a tip, methods are most often named using a verb:
+
+// TODO 5 : Create a function that prints the firstName, lastName and city of the person:
+
+person.sayHello = function() {
+  console.log("Hello, my name is " + this.firstName + " " + this.lastName + ", I live in " + this.city);  
+}
+person.sayHello();
 
 &copy; John Fraboni 2014
